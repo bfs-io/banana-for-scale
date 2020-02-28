@@ -1,5 +1,6 @@
 backend:
-  name: desertsofcacti/banana-for-scale
+  name: github
+  repo: desertsofcacti/banana-for-scale
 
 media_folder: static/assets
 public_folder: static
