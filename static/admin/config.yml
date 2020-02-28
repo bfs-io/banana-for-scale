@@ -1,8 +1,8 @@
 backend:
-  name: test-repo
+  name: desertsofcacti/banana-for-scale
 
-media_folder: desertsofcacti/banana-for-scale
-public_folder: assets
+media_folder: static/assets
+public_folder: static
 
 collections:
   - name: banana-for-scale
