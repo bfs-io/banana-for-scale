@@ -1,13 +1,13 @@
 backend:
   name: test-repo
 
-media_folder: static/assets
+media_folder: desertsofcacti/banana-for-scale
 public_folder: assets
 
 collections:
-  - name: personal-blog
+  - name: banana-for-scale
     repo: git@github.com:desertsofcacti/banana-for-scale
-    label: Blog
+    label: Entry
     folder: content/blog
     create: true
     fields:
