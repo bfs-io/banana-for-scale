@@ -5,3 +5,5 @@ title: Hello
 description: World
 ---
 Ping
+
+![](/static/banana.jpg)
