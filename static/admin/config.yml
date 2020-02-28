@@ -5,7 +5,8 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
+  - name: personal-blog
+    repo: git@github.com:desertsofcacti/personal-blog
     label: Blog
     folder: content/blog
     create: true
