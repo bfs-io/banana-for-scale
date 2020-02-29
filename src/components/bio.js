@@ -34,8 +34,8 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in the
-              Dallas/Ft.Worth area building useful things.
+              Written by <strong>{author}</strong>, a Native Texan, who lives
+              and works in the Dallas/Ft.Worth area.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow him on Twitter
