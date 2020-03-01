@@ -5,20 +5,149 @@ title: 'NodeJS API Tutorial: Building an API with ExpressJS and KnexJS'
 description: Learn how to develop a RESTful API with Node.js and Express
 ---
 ## What we will build
+
 In this tutorial, we will learn to build a RESTful API using NodeJS libraries and frameworks. Prerequisites include NodeJS and NPM installed on your local machine. If you need the prerequisites, follow this [link.](https://nodejs.org/en/download/)
 
 ## Why do we want to build an API?
+
 You might have learned about front-end web-development, and you might have connected your application to various open-source APIs that are publicly available, such as [YouTube](https://developers.google.com/youtube/v3) or [Open Weather Map](https://openweathermap.org/api) but if we are wanting to work with in-house data such as from a database, we will find the RESTful Application Programming Interface (eg. API) to be a useful tool in operating with data. An API uses HTTP verbs such as `GET`, `PUT`, `POST`, and `DELETE` to perform operations for working with data. RESTful APIs are based on the REpresentational State Transfer (eg. REST) architectural style that enables us to read and write data into our front-end application.
 
 If you would like to learn more about the REST approach, check out [this article](https://martinfowler.com/articles/richardsonMaturityModel.html). Also, here are some resources for tooling to checkout:
-- [Insomnia](https://insomnia.rest/)
-- [Fiddler](https://www.telerik.com/fiddler)
-- [Paw](https://paw.cloud/) for OS X
-- [PostMan](https://www.postman.com/)
-- [PostWoman](https://postwoman.io/)
+
+* [Insomnia](https://insomnia.rest/)
+* [Fiddler](https://www.telerik.com/fiddler)
+* [Paw](https://paw.cloud/) for OS X
+* [PostMan](https://www.postman.com/)
+* [PostWoman](https://postwoman.io/)
 
 ## Let's start building the API (from scratch)
+
 Open your favorite terminal application (two popular choices for OS X are [iTerm2](https://iterm2.com/) and [HyperJS](https://hyper.is/). Let's create a new directory for our project and at the same time let's go ahead and initiate `npm` to scaffold a new project.
+
 ```
 mkdir my-api-project && cd my-api-project && npm init -y
 ```
+
+Next, let's load in our sample data that we are working with for the  API. To start, let's work with [this](https://github.com/desertsofcacti/bondflix/blob/master/data.json) JSON file containing some data for the James Bond 007 titles. As you can see we now have a shape of data as follows:
+
+```
+{
+    "007-titles": [
+    {
+        "imdb_id": "",
+        "title": "",
+        "year": "",
+        "rated": "",
+        "released": "",
+        "runtime": "",
+        "genre": "",
+        "director": "",
+        "writers": "",
+        "actors": "",
+        "plot": "",
+        "country": "",
+        "language": "",
+        "metascore": "",
+        "poster": "",
+        "rating": "",
+        "votes": "",
+        "budget": "",
+        "opening_weekend": "",
+        "gross": "",
+        "production": "",
+        "type": "",
+        "status": ""
+    }
+]
+```
+
+Let's save this into the `db.json` file in the `./db` folder:
+
+```
+my-api-project$ mkdir db && cd db && touch db.json
+```
+
+Now that we have `npm` initialized and we have some sample data saved, let's start setting up our Express server. First we'll need to load some libraries into our project using `npm`.
+
+```
+my-api-project$ npm i --save body-parser cors express
+```
+
+This command will install five dependencies into our project:
+
+* `body-parser` - This library will help us convert the body of our incoming requests into JS objects
+* `cors` - This will help us configure Express to add headers that announce to the consuming application that our API accepts requests coming from other origins. This is known as [Cross-Origin-Resource-Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (CORS)
+* `express` - This is the ExpressJS web application library that we will be using the serve HTTP requests.
+
+## Building the server
+
+Let's make two files in our project root. `app.ts` and `server.ts`. In `app.ts` we will want to import the libraries we plan to use and in `server.ts` we will import our `app.ts` and instantiate our server to listen on a particular port number. These two files will be as follows:
+
+`server.ts`
+
+```
+import app from './app';
+const PORT = process.env.PORT || 8080;
+
+export const server = app.listen(PORT, () => {
+    console.log('listening on port ' + PORT);
+});
+```
+
+`app.ts`
+
+```
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import express from 'express';
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+export default app;
+```
+
+## Getting the server ready to run
+
+Because we are using Typescript on our project, there are few particular pieces of setup that we'll want to get going. First we'll want to add a couple of libraries that will allow us to use Typescript.
+
+While we're at it, let's go ahead and install `typescript` and `ts-node` globally as well so that the commands that we will run, such as `ts-node` are available easily at the command prompt. To do this, we will add the `-g` switch with `npm install`, as follows;
+
+```
+my-api-project$ npm i -g --save-dev typescript ts-node
+```
+
+Cool! Let's give our little application a spin and see what we've got working so far. To run a Typescript file, we will use `ts-node` from the command line followed by the filename. In this case we are calling `server.ts` in the `/src` folder.
+
+```
+my-api-project$ ts-node /src/server.ts
+```
+
+When we run this, we get an error message that states the following:
+
+```
+/usr/local/lib/node_modules/ts-node/src/index.ts:421
+    return new TSError(diagnosticText, diagnosticCodes)
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/server.ts:2:14 - error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i @types/node`.
+
+2 const PORT = process.env.PORT || 8080;
+```
+
+## What does it all mean Basil?
+
+
+
+## Next Up
+
+In up coming articles we will address the follwing refinements to our application:
+
+* Using `Jest` to setup tests
+* Connecting a MySql DB
+* Securing our application with JWT
+* Building our application to ship inside a Docker container
