@@ -169,7 +169,7 @@ Aaaand.. error.
 
 \## Now What?!
 
-![](/static/now-what.webp)
+![](/static/assets/now-what.webp)
 
 This error is telling us that we need to set the `esModuleInterop` flag to `true`. To do that we'll need to setup a `tsconfig.json` config for Typescript to read from. Let's do that now.
 
@@ -230,7 +230,7 @@ listening on port 8080
 ```
 Hooray!
 
-![](/static/horray.gif)
+![](https://github.com/desertsofcacti/banana-for-scale/blob/master/static/assets/horray.gif)
 
 
 
