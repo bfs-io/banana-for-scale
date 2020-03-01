@@ -141,6 +141,97 @@ src/server.ts:2:14 - error TS2580: Cannot find name 'process'. Do you need to in
 
 ## What does it all mean Basil?
 
+![](/static/umm-what.gif)
+
+What this error is saying is that `ts-node` is unable to compile the Typescript because the type definitions need to be loaded. Let's load those into our project. While we're at it, we'll need the types for Express, CORS, and Body Parser as well.
+
+```
+my-api-project$ npm i --save-dev @types/node @types/express @types/cors @types/body-parser
+```
+
+Ok, cool. Let's try running our server again!
+
+```
+my-api-project$ ts-node /src/server.ts
+```
+
+Aaaand.. error.
+
+```
+    import express from 'express';
+             ~~~~~~~
+
+    node_modules/@types/express/index.d.ts:107:1
+    107 export = e;
+            ~~~~~~~~~~~
+    This module is declared with using 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+```
+
+\## Now What?!
+
+![](/static/now-what.webp)
+
+This error is telling us that we need to set the `esModuleInterop` flag to `true`. To do that we'll need to setup a `tsconfig.json` config for Typescript to read from. Let's do that now.
+
+```
+my-api-project$ touch tsconfig.json
+```
+
+//tsconfig.json
+
+```
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "incremental": true /* Enable incremental compilation */,
+    "target": "es2015" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */,
+    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    "allowJs": false /* Allow javascript files to be compiled. */,
+    "declaration": true /* Generates corresponding '.d.ts' file. */,
+    "declarationMap": true /* Generates a sourcemap for each corresponding '.d.ts' file. */,
+    "sourceMap": true /* Generates corresponding '.map' file. */,
+    "outDir": "dist" /* Redirect output structure to the directory. */,
+    "rootDir": "src" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
+
+    /* Strict Type-Checking Options */
+    "strict": true /* Enable all strict type-checking options. */,
+    "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+    "strictNullChecks": true /* Enable strict null checks. */,
+    "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
+    "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */,
+
+    /* Additional Checks */
+    "noUnusedLocals": true /* Report errors on unused locals. */,
+    "noUnusedParameters": true /* Report errors on unused parameters. */,
+    "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+
+    /* Experimental Options */
+    "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */
+  },
+  "include": ["./src/**/*"]
+}
+```
+
+Here we have set the `"esModuleInterop":` to `true`. Cool. More about that configuration file later. For now, we want to get our server running.
+
+Let's try running the server one more time.
+
+```
+my-api-project$ ts-node /src/server.ts
+```
+
+We get:
+
+```
+listening on port 8080
+```
+Hooray!
+
+![](/static/horray.gif)
+
 
 
 ## Next Up
