@@ -158,16 +158,16 @@ my-api-project$ ts-node /src/server.ts
 Aaaand.. error.
 
 ```
-    import express from 'express';
-             ~~~~~~~
+        import express from 'express';
+                 ~~~~~~~
 
-    node_modules/@types/express/index.d.ts:107:1
-    107 export = e;
-            ~~~~~~~~~~~
-    This module is declared with using 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+        node_modules/@types/express/index.d.ts:107:1
+        107 export = e;
+                ~~~~~~~~~~~
+        This module is declared with using 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
 ```
 
-\## Now What?!
+## Now What?!
 
 ![](https://bananaforscale.netlify.com/assets/now-what.webp)
 
@@ -177,7 +177,7 @@ This error is telling us that we need to set the `esModuleInterop` flag to `true
 my-api-project$ touch tsconfig.json
 ```
 
-//tsconfig.json
+`tsconfig.json`
 
 ```
 {
@@ -228,15 +228,35 @@ We get:
 ```
 listening on port 8080
 ```
+
 Hooray!
 
 ![](https://bananaforscale.netlify.com/assets/horray.gif)
 
+## What's next?
 
+Ok, next, now that we have our server running, let's go ahead and make our first commit for git and let's push our working code. If you have not already setup a repository for your project, let's do that now. If you want to follow along with the code for this project, you can do that [here](https://github.com/desertsofcacti/api-nodejs-ts-express-knex).
+
+## Loading our data
+
+Now that we have the server running, let's inspect our URL in Paw. We can see that the server is listening on port 8080 from the message displayed in the terminal. Since we know this is running on our localhost, let's look for a `GET` response on `localhost:8080`
+
+![](/static/screenshot-2020-03-01-16.27.54.png)
+
+We can see from our API client that we are receiving a message from the HTTP server. The message shows us:
+```
+Cannot GET /
+```
+This is because we need to setup a `GET` method to response at the root endpoint (eg. `/`). Let's setup a route for the endpoint and associate the `GET` method with our route.
+
+`./src/routes/routes.ts`
+```
+
+```
 
 ## Next Up
 
-In up coming articles we will address the follwing refinements to our application:
+In up coming articles we will address the following refinements to our application:
 
 * Using `Jest` to setup tests
 * Connecting a MySql DB
