@@ -141,7 +141,7 @@ src/server.ts:2:14 - error TS2580: Cannot find name 'process'. Do you need to in
 
 ## What does it all mean Basil?
 
-![](/static/umm-what.gif)
+![](https://bananaforscale.netlify.com/assets/umm-what.gif)
 
 What this error is saying is that `ts-node` is unable to compile the Typescript because the type definitions need to be loaded. Let's load those into our project. While we're at it, we'll need the types for Express, CORS, and Body Parser as well.
 
@@ -169,7 +169,7 @@ Aaaand.. error.
 
 \## Now What?!
 
-![](/static/assets/now-what.webp)
+![](https://bananaforscale.netlify.com/assets/now-what.webp)
 
 This error is telling us that we need to set the `esModuleInterop` flag to `true`. To do that we'll need to setup a `tsconfig.json` config for Typescript to read from. Let's do that now.
 
@@ -230,7 +230,7 @@ listening on port 8080
 ```
 Hooray!
 
-![](https://github.com/desertsofcacti/banana-for-scale/blob/master/static/assets/horray.gif)
+![](https://bananaforscale.netlify.com/assets/horray.gif)
 
 
 
