@@ -241,7 +241,7 @@ Ok, next, now that we have our server running, let's go ahead and make our first
 
 Now that we have the server running, let's inspect our URL in Paw. We can see that the server is listening on port 8080 from the message displayed in the terminal. Since we know this is running on our localhost, let's look for a `GET` response on `localhost:8080`
 
-![](/static/screenshot-2020-03-01-16.27.54.png)
+![](https://bananaforscale.netlify.com/assets/screenshot-2020-03-01-16.27.54.png)
 
 We can see from our API client that we are receiving a message from the HTTP server. The message shows us:
 ```
