@@ -6,7 +6,7 @@ description: Learn how to develop a RESTful API with Node.js and Express
 ---
 ## What we will build
 
-In this tutorial, we will learn to build a RESTful API using NodeJS libraries and frameworks. Prerequisites include NodeJS and NPM installed on your local machine. If you need the prerequisites, follow this [link.](https://nodejs.org/en/download/)
+In this multi-part tutorial, we will learn to build a RESTful API using NodeJS libraries and frameworks. Prerequisites include NodeJS and NPM installed on your local machine. If you need the prerequisites, follow this [link.](https://nodejs.org/en/download/)
 
 ## Why do we want to build an API?
 
@@ -251,14 +251,43 @@ This is because we need to setup a `GET` method to response at the root endpoint
 
 `./src/routes/routes.ts`
 ```
+import express from 'express';
+const router = express.Router();
+import { readTitles } from './titles';
 
+router.route('/titles/').get(readTitles);
+
+export default router;
 ```
+
+Note, that we are using `express.Router` here to call the `get` method on the `readTitles` function. The `readTitles` function has been imported from the `./titles`. Let's create the `titles.ts` file next:
+
+`titles.ts`
+```
+import { RequestHandler } from 'express';
+
+const results = 'hello world';
+
+export const readTitles: RequestHandler = async (_req, res) => {
+    try {
+        res.status(200).send(results);
+    } catch (error) {
+        res.status(500).send('HTTP 500 - Unable to get titles');
+    }
+};
+```
+
+Here are are importing the `RequestHandler` from express and setting the `readTitles` function to the `RequestHandler` type. Within the `RequestHandler` function we have a `try/catch` statement where we are passing `results` to the `res` response along with an HTTP 200 status.
+
+When we inspect the URL `http://localhost:8080/titles` (note we are using the titles route), we should be presented with the `hello world` greeting.
+
+This concludes this part of the tutorial for building an API with ExpressJS and KnexJS. In this part we have built an express server that returns a string at a certain route. We have setup Typescript and have configured a routes controller for our application and imported a route function for our data.
 
 ## Next Up
 
 In up coming articles we will address the following refinements to our application:
-
-* Using `Jest` to setup tests
+* Connecting our JSON data and returning the JSON to the GET method.
 * Connecting a MySql DB
+* Using `Jest` to setup tests
 * Securing our application with JWT
 * Building our application to ship inside a Docker container
