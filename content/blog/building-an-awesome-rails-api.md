@@ -24,6 +24,8 @@ This tutorial will cover building the application on OS X using Rails 6 and Ruby
 Apple bundles Ruby with OS X, however, for development purposes we should use RVM for managing our own builds and versions. Here is an [article](https://usabilityetc.com/articles/ruby-on-mac-os-x-with-rvm/) from Jeffrey Morgan explaining some of the setup with this configuration.
 
 ### Deploy Early and Often
-Heroku is a great choice for RoR development and offers a service at no-cost to get started. We've named our application
+Heroku is a great choice for RoR development and offers a service at no-cost to get started. Let's name our application.
 
-```awesome-rails-api```
+```
+awesome-rails-api
+```
