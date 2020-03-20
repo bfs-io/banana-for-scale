@@ -75,3 +75,22 @@ http://localhost:3000
 We see our first error in big scary red and white type!
 
 ![](https://bananaforscale.netlify.com/assets/screen-shot-2020-03-20-at-3.33.01-pm.png "ActiveRecord::NoDatabaseError")
+
+Have no worry! Rake can take care of this with ease!
+
+```
+rake db:create
+```
+
+We see the output
+```
+Created database 'awesome_rails_api_development'
+Created database 'awesome_rails_api_test'
+```
+
+Cool, and we see our app!
+
+```
+rails server
+```
+
