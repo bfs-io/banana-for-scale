@@ -35,3 +35,38 @@ According to the official Rails documentation, if we want to create an "API-only
 ```
 rails new awesome-rails-api --api --database=mysql
 ```
+
+Next we will run `bundle install` and `rake db:create` in the `awesome-rails-api` directory. But first, let's setup our development and production values in the `config/database.rb` file for such things as our database names.
+
+Because we selected the JawsDB MySQL resource, we notice that the value has been set for the `JAWSDB_URL` key in the config vars section under the settings for the Heroku app. In `config/database.rb`, our production settings contain this key wrapped in a syntax to be read as an environment variable.
+
+```
+production:
+  <<: *default
+  url: <%= ENV['JAWSDB_URL'] %>
+```
+
+Next, Heroku wants a `Procfile` to load the Puma webserver configuration at `config/puma.rb`
+
+We make the Profile and load the one-liner into the file:
+
+```
+echo "web: bundle exec puma -C config/puma.rb" >> Procfile
+```
+
+We configure the `config/puma.rb` according to the [Heroku Documentation](https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server) and get ready to test the server locally.
+
+We run the server locally with:
+
+```
+rails server
+```
+
+Our server seems to run and we visit the application at:
+
+```
+http://localhost:3000
+```
+
+We see our first error in big scary red and white type!
+
