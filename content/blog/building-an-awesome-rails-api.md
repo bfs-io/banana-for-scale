@@ -74,4 +74,4 @@ http://localhost:3000
 
 We see our first error in big scary red and white type!
 
-![](/static/screen-shot-2020-03-20-at-3.33.01-pm.png "ActiveRecord::NoDatabaseError")
+![](https://bananaforscale.netlify.com/assets/screen-shot-2020-03-20-at-3.33.01-pm.png "ActiveRecord::NoDatabaseError")
