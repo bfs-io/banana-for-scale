@@ -1,8 +1,8 @@
 ---
 path: /awesome-rails-api
 date: 2020-03-20T18:56:42.375Z
-title: Building An Awesome Rails API
-description: 'Using Ruby on Rails to build a RESTful JSON API '
+title: Building a Rails API
+description: Using Ruby on Rails to build a RESTful JSON API with MySQL DB
 ---
 Need an API? Ruby on Rails presents a strong argument for an API framework. True, there are some [Performance Considerations](https://www.mskog.com/posts/42-performance-tips-for-ruby-on-rails/) to take into account and we probably won't be seeing those [sub-millisecond](https://www.speedshop.co/2015/05/27/100-ms-to-glass-with-rails-and-turbolinks.html) performances that we might see if we were using something like [Elixr](https://thoughtbot.com/blog/testing-a-phoenix-elixir-json-api) - enter Haskell, but there are still plenty of valid reasons for choosing Ruby on Rails for an API.
 - Active Record, despite its flaws, is still quite useful for a quick CRUD-based application where the Model is relatively flat (eg. not a lot of class hierarchies). There are [alternatives](https://github.com/TalentBox/sequel-rails) to AR that we won't discuss here and for this tutorial we will be working with AR.
@@ -24,8 +24,14 @@ This tutorial will cover building the application on OS X using Rails 6 and Ruby
 Apple bundles Ruby with OS X, however, for development purposes we should use RVM for managing our own builds and versions. Here is an [article](https://usabilityetc.com/articles/ruby-on-mac-os-x-with-rvm/) from Jeffrey Morgan explaining some of the setup with this configuration.
 
 ### Deploy Early and Often
-Heroku is a great choice for RoR development and offers a service at no-cost to get started. Let's name our application.
+Heroku is a great choice for RoR development and offers a service at no-cost to get started. For this tutorial, let assume we've named our application in Heroku:
 
 ```
 awesome-rails-api
+```
+
+According to the official Rails documentation, if we want to create an "API-only" version of Rails, we can do so by passing the `--api` parameter when we run the `rails new` command. Make sure you've installed rails with `gem install rails`. We're also going to pass `--database` along with the command and create the MySQL database.
+
+```
+rails new awesome-rails-api --api --database=mysql
 ```
