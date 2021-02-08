@@ -21,7 +21,7 @@ class IndexPage extends React.Component {
             `web development`,
           ]}
         />
-        <img style={{ margin: 0, width: 25%, height: auto }} src="./mike_hacker.jpg" />
+        <img style={{ margin: "0" width: "25%" height: "auto" }} src="./mike_hacker.jpg" />
         <h1>
           Mahalo{" "}
           <span role="img" aria-label="hang ten emoji">
