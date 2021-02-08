@@ -4,7 +4,7 @@ module.exports = {
     title: `Banana For Scale`,
     author: `Mike Hacker`,
     description: `My Blog. Titled: Banana For Scale`,
-    siteUrl: `https://bananaforscale.netlify.com/`,
+    siteUrl: `https://mikehacker.dev/`,
     social: {
       twitter: `killscreenmike`,
     },

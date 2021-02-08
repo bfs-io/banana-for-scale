@@ -7,7 +7,7 @@ import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Mike Hacker"
+    const siteTitle = "Banana for Scale"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -21,14 +21,16 @@ class IndexPage extends React.Component {
             `web development`,
           ]}
         />
-        {/* <img style={{ margin: 0 }} src="./mike_hacker.jpg" /> */}
+        <img style={{ margin: 0 }} src="./banana.jpg" />
         <h1>
           Mahalo{" "}
           <span role="img" aria-label="hang ten emoji">
             🤙
           </span>
         </h1>
-        <p>Hello, thanks for stopping by. I work as Application Developer & Automation Engineer and I develop education content for learning how to code at codealongstudio.com.</p>
+        <p>Welcome to my web log titled Banana For Scale where I blog about software related subjects. A little about me; I work as Application Developer & Automation Engineer and I develop education content for learning how to code at codealongstudio.com. Thanks for stopping by!</p>
+        <br></br>
+        <p>To get on my calendar, <a href="https://calendly.com/mikehacker">click here.</a></p>
         <Link to="/blog/">
           <Button marginTop="35px">Read My Web Log</Button>
         </Link>
