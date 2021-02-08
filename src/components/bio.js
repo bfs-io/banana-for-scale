@@ -35,7 +35,7 @@ function Bio() {
             />
             <p>
               Written by <strong>{author}</strong>, a Native Texan, who lives
-              and works in the Dallas/Ft.Worth area.
+              and works in the Austin/San Antonio, Texas area.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow him on Twitter
