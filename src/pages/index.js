@@ -18,19 +18,18 @@ class IndexPage extends React.Component {
             `mike hacker`,
             `javascript`,
             `react`,
-            "web development",
+            `web development`,
           ]}
         />
-        <img style={{ margin: 0 }} src="./banana.jpg" alt="Gatsby Scene" />
         <h1>
           Mahalo{" "}
           <span role="img" aria-label="hang ten emoji">
             🤙
           </span>
         </h1>
-        <p>Welcome to my web log, hosted by Mike Hacker.</p>
+        <p>My name is Mike Hacker. I work as Application Developer & Automation Engineer and I develop education content for learning how to code at codealongstudio.com. Thanks for stopping by.</p>
         <Link to="/blog/">
-          <Button marginTop="35px">Read Weblog</Button>
+          <Button marginTop="35px">Read My Web Log</Button>
         </Link>
       </Layout>
     )
