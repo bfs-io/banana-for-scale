@@ -8,6 +8,22 @@ description: >-
 ---
 # Best Practices
 
+## The Engagement
+
+\- Inception
+
+Best practices, organizing details, creating living documents that serve as collaborative documents between teams. Obtaining immediate needs, discussing expectations.
+
+\- Outception
+
+Formally presenting to the larger group, in a manner that communicates the key takeaways and clearly articulates how the effort supports the value-stream.
+
 # Resources for Getting Started
 
+\- O'Reilly Media
+
 # The Way of the Guru
+
+\- Communicating complex information to non-technical audiences.
+
+\- Understanding the low-code, citizen-developer audience.
