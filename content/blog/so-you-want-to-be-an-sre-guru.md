@@ -1,7 +1,7 @@
 ---
-path: sre-guru
+path: devops-guru
 date: 2021-03-08T23:08:42.719Z
-title: So you want to be an SRE Guru?
+title: So you want to be an DevOps Guru?
 description: >-
   In this article, I will highlight best practices, share resources for getting
   started, and reveal the way of the guru.
@@ -22,8 +22,6 @@ Formally presenting to the larger group, in a manner that communicates the key t
 
 \- O'Reilly Media
 
-# The Way of the Guru
+# The Way of DevOps
 
-\- Communicating complex information to non-technical audiences.
-
-\- Understanding the low-code, citizen-developer audience.
+\- Communicating the low-code/no-code, citizen-developer mantra.
