@@ -7,6 +7,7 @@ description: >-
   .Net Core 6 Preview
 ---
 # Phase I
+
 Preliminary tasks. Estimated time. 30 minutes.
 
 ## Install .Net Core 6 Preview
@@ -63,10 +64,13 @@ To install additional .NET runtimes or SDKs:
 ```
 
 Let's inspect the directory `BlazorApp`
+
 ```
 ~$ cd BlazorApp
 ```
+
 If successful, your directory contents should look something like this:
+
 ```
 total 56
 drwxr-xr-x  17 mike.hacker  staff   544 Mar 11 10:42 .
@@ -89,6 +93,7 @@ drwxr-xr-x   4 mike.hacker  staff   128 Mar 11 10:40 wwwroot
 ```
 
 Some of the key files are:
+
 ```
 BlazorApp.csproj defines the app project and its dependencies.
 Program.cs // the entry point for the app that starts the server.
@@ -103,7 +108,8 @@ App.razor // the root component for the app.
 ~$ dotnet watch run
 ```
 
-
+![Screenshot of Blazor running in the web browser.](/static/screenshot-blazor-tutorial-run.png "Initial Blazor Run")
 
 # Phase II
+
 Add the CRUD functionality. Estimated time. 30 Minutes.
