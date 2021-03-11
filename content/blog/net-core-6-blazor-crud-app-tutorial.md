@@ -110,21 +110,17 @@ App.razor // the root component for the app.
 
 ![Screenshot of Blazor running in the web browser.](/static/screenshot-blazor-tutorial-run.png "Initial Blazor Run")
 
-Let's take a look at the contents of the page that we are viewing:
+Let's take a look at the contents of the page that we are viewing.
 
-\`\``
+First let's view our code with VSCode. This makes sense since we are working with a Microsoft code-base, and it is logical to use a Microsoft supplied IDE such as VSCode. We could have used Visual Studio for MacOS alternativly, however while writing this article, I was mostly interested in specifically researching the progress of the recently released .Net Core 6 on MacOS and specifically what limitations exist when Visual Studio is not used. Before jumping immediatly to Visual Studio, I may even prefer to evaluate something like `OmniSharp/Kulture` on Sublime Text.
 
+```
 // Pages/Index.razor
-
 @page "/"
-
 <h1>Hello, world!</h1>
-
 Welcome to your new app.
-
 <SurveyPrompt Title="How is Blazor working for you?" />
-
-\`\``
+```
 
 Notice the first line above is prefixed with a double forward slash \`//\`. This is this C# comment syntax.
 
