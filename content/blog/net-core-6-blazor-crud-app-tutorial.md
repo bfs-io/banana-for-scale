@@ -10,7 +10,19 @@ description: >-
 
 Let's start by reading [this Microsoft announcement](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-1/) on .Net Core 6 Preview
 
-You can find the download [here](https://dotnet.microsoft.com/download/dotnet/6.0)
+You can find the download [here](https://dotnet.microsoft.com/download/dotnet/6.0).
+
+Once .Net Core 6 Preview is installed, we can verify the version
+
+```
+dotnet --veresion
+```
+
+We can also view more info as well:
+
+```
+dotnet --info
+```
 
 # Create the Blazor App
 
