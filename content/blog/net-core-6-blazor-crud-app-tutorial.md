@@ -8,4 +8,12 @@ description: >-
 ---
 # Install .Net Core 6 Preview
 
+Let's start by reading [this Microsoft announcement](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-1/) on .Net Core 6 Preview
+
+You can find the download [here](https://dotnet.microsoft.com/download/dotnet/6.0)
+
 # Create the Blazor App
+
+```
+dotnet new blazorserver -o MyBlazorApp --no-https
+```
