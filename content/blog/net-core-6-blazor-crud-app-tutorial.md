@@ -110,6 +110,24 @@ App.razor // the root component for the app.
 
 ![Screenshot of Blazor running in the web browser.](/static/screenshot-blazor-tutorial-run.png "Initial Blazor Run")
 
+Let's take a look at the contents of the page that we are viewing:
+
+\`\``
+
+// Pages/Index.razor
+
+@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+\`\``
+
+Notice the first line above is prefixed with a double forward slash \`//\`. This is this C# comment syntax.
+
 # Phase II
 
 Add the CRUD functionality. Estimated time. 30 Minutes.
