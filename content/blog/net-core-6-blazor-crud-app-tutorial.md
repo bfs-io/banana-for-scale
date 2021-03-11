@@ -110,9 +110,7 @@ App.razor // the root component for the app.
 
 ![Screenshot of Blazor running in the web browser.](https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,h_340,w_640/v1615483023/Bannana%20for%20Scale/screenshot-blazor-tutorial-run_by4r9b.png "Initial Blazor Run")
 
-Let's take a look at the contents of the page that we are viewing.
-
-First let's view our code with VSCode. This makes sense since we are working with a Microsoft code-base, and it is logical to use a Microsoft supplied IDE such as VSCode. We could have used Visual Studio for MacOS alternativly, however while writing this article, I was mostly interested in specifically researching the progress of the recently released .Net Core 6 on MacOS and specifically what limitations exist when Visual Studio is not used. Before jumping immediatly to Visual Studio, I may even prefer to evaluate something like `OmniSharp/Kulture` on Sublime Text.
+Let's take a look at the contents of the page that we are viewing using the lightweight approach with Visual Studio Code and the C# extension installed.
 
 ```
 // Pages/Index.razor
