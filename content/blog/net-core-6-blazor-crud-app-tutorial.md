@@ -63,6 +63,14 @@ To install additional .NET runtimes or SDKs:
 ~$ dotnet new blazorserver -o BlazorApp --no-https
 ```
 
+It is also possible to create additional types of Blazor instances here. For example, to create a WASM app:
+
+```
+dotnet new blazorwasm -o BlazorWasm --no-https
+```
+
+[Here](https://docs.microsoft.com/en-us/dotnet/core/tools/) is a link to the \`dotnet new\` commands. The first argument of the \`new\` command is the `<TEMPLATE>`. [Here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new) is the list of arguments .Net supports. The list is quite long.
+
 Let's inspect the directory `BlazorApp`
 
 ```
