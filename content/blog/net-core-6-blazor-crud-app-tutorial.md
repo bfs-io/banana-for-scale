@@ -84,3 +84,12 @@ drwxr-xr-x   7 mike.hacker  staff   224 Mar 11 10:40 Shared
 drwxr-xr-x   7 mike.hacker  staff   224 Mar 11 10:40 obj
 drwxr-xr-x   4 mike.hacker  staff   128 Mar 11 10:40 wwwroot
 ```
+
+Some of the key files are:
+```
+BlazorApp.csproj defines the app project and its dependencies.
+Program.cs // the entry point for the app that starts the server.
+Startup.cs // where you configure the app services and middleware.
+App.razor // the root component for the app.
+./Pages // contains some example web pages for the app.
+```
