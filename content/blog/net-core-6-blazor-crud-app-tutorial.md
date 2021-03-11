@@ -137,3 +137,11 @@ Notice the first line above is prefixed with a double forward slash \`//\`. This
 # Part II
 
 Add the CRUD functionality. Estimated time. 30 Minutes.
+
+## Additional Tooling
+To install the Javascript Debugger Extension, perform the following steps:
+1. Open the extensions browser in Visual Studio Code by selecting the Extensions symbol on the leftmost pane. Or in Windows, select 
+2. From the list of enabled extensions, select JavaScript Debugger (Nightly).
+3. To open the extensions settings, select and hold (or right-click) JavaScript Debugger (Nightly) and select Extension Settings.
+4. Scroll to the Debug > JavaScript Use Preview setting.
+5. Select Use the new in-preview JavaScript debugger for Node.js and Chrome.
