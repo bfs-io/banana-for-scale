@@ -108,9 +108,9 @@ App.razor // the root component for the app.
 ~$ dotnet watch run
 ```
 
-![Screenshot of Blazor running in the web browser.](https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,h_340,w_640/v1615483023/Bannana%20for%20Scale/screenshot-blazor-tutorial-run_by4r9b.png "Initial Blazor Run")
-
 Let's take a look at the contents of the page that we are viewing using the lightweight approach with Visual Studio Code and the C# extension installed.
+
+![Screenshot of Blazor running in the web browser.](https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,h_340,w_640/v1615483023/Bannana%20for%20Scale/screenshot-blazor-tutorial-run_by4r9b.png "Initial Blazor Run")
 
 ```
 // Pages/Index.razor
