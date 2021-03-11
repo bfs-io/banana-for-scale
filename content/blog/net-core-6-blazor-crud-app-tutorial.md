@@ -57,6 +57,8 @@ To install additional .NET runtimes or SDKs:
   https://aka.ms/dotnet-download
 ```
 
+This project is based off the [ASP.NET Core 6.0 Preview, Blazor docs.](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-6.0)
+
 ## Create the Blazor App
 
 ```
@@ -139,7 +141,9 @@ Notice the first line above is prefixed with a double forward slash \`//\`. This
 Add the CRUD functionality. Estimated time. 30 Minutes.
 
 ## Additional Tooling
+
 To install the Javascript Debugger Extension, perform the following steps:
+
 1. Open the extensions browser in Visual Studio Code by selecting the Extensions symbol on the leftmost pane. Or in Windows, select 
 2. From the list of enabled extensions, select JavaScript Debugger (Nightly).
 3. To open the extensions settings, select and hold (or right-click) JavaScript Debugger (Nightly) and select Extension Settings.
