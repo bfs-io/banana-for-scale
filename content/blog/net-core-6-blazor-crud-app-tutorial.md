@@ -108,7 +108,7 @@ App.razor // the root component for the app.
 ~$ dotnet watch run
 ```
 
-![Screenshot of Blazor running in the web browser.](https://mikehacker.dev/afaa487d-7605-6e48-8312-a21240a88436 "Initial Blazor Run")
+![Screenshot of Blazor running in the web browser.](https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,h_340,w_640/v1615483023/Bannana%20for%20Scale/screenshot-blazor-tutorial-run_by4r9b.png "Initial Blazor Run")
 
 Let's take a look at the contents of the page that we are viewing.
 
