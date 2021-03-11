@@ -15,13 +15,13 @@ You can find the download [here](https://dotnet.microsoft.com/download/dotnet/6.
 Once .Net Core 6 Preview is installed, we can verify the version
 
 ```
-dotnet --veresion
+~$ dotnet --veresion
 ```
 
 We can also view more info as well:
 
 ```
-dotnet --info
+~$ dotnet --info
 ```
 
 I'm using MacOS for this article, but your output should look something like this:
@@ -56,5 +56,31 @@ To install additional .NET runtimes or SDKs:
 # Create the Blazor App
 
 ```
-dotnet new blazorserver -o MyBlazorApp --no-https
+~$ dotnet new blazorserver -o BlazorApp --no-https
+```
+
+Let's inspect the directory `BlazorApp`
+```
+~$ cd BlazorApp
+```
+If successful, your directory contents should look something like this:
+```
+total 56
+drwxr-xr-x  17 mike.hacker  staff   544 Mar 11 10:42 .
+drwxr-xr-x   3 mike.hacker  staff    96 Mar 11 10:40 ..
+drwxr-xr-x  12 mike.hacker  staff   384 Mar 11 10:43 .git
+-rw-r--r--   1 mike.hacker  staff   387 Mar 11 10:40 App.razor
+-rw-r--r--   1 mike.hacker  staff   141 Mar 11 10:40 BlazorApp.csproj
+drwxr-xr-x   4 mike.hacker  staff   128 Mar 11 10:40 Data
+drwxr-xr-x   8 mike.hacker  staff   256 Mar 11 10:40 Pages
+-rw-r--r--   1 mike.hacker  staff   717 Mar 11 10:40 Program.cs
+drwxr-xr-x   3 mike.hacker  staff    96 Mar 11 10:40 Properties
+-rw-r--r--   1 mike.hacker  staff     0 Mar 11 10:42 READMD.md
+drwxr-xr-x   7 mike.hacker  staff   224 Mar 11 10:40 Shared
+-rw-r--r--   1 mike.hacker  staff  1753 Mar 11 10:40 Startup.cs
+-rw-r--r--   1 mike.hacker  staff   392 Mar 11 10:40 _Imports.razor
+-rw-r--r--   1 mike.hacker  staff   195 Mar 11 10:40 appsettings.Development.json
+-rw-r--r--   1 mike.hacker  staff   192 Mar 11 10:40 appsettings.json
+drwxr-xr-x   7 mike.hacker  staff   224 Mar 11 10:40 obj
+drwxr-xr-x   4 mike.hacker  staff   128 Mar 11 10:40 wwwroot
 ```
