@@ -6,7 +6,10 @@ description: >-
   In this tutorial I will show how to build a simple CRUD app using Blazor and
   .Net Core 6 Preview
 ---
-# Install .Net Core 6 Preview
+# Phase I
+Preliminary tasks. Estimated time. 30 minutes.
+
+## Install .Net Core 6 Preview
 
 Let's start by reading [this Microsoft announcement](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-1/) on .Net Core 6 Preview
 
@@ -53,7 +56,7 @@ To install additional .NET runtimes or SDKs:
   https://aka.ms/dotnet-download
 ```
 
-# Create the Blazor App
+## Create the Blazor App
 
 ```
 ~$ dotnet new blazorserver -o BlazorApp --no-https
@@ -93,3 +96,14 @@ Startup.cs // where you configure the app services and middleware.
 App.razor // the root component for the app.
 ./Pages // contains some example web pages for the app.
 ```
+
+## Run the App
+
+```
+~$ dotnet watch run
+```
+
+
+
+# Phase II
+Add the CRUD functionality. Estimated time. 30 Minutes.
