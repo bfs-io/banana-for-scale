@@ -6,7 +6,7 @@ description: >-
   In this tutorial I will show how to build a simple CRUD app using Blazor and
   .Net Core 6 Preview
 ---
-# Phase I
+# Part I
 
 Preliminary tasks. Estimated time. 30 minutes.
 
@@ -134,6 +134,6 @@ Welcome to your new app.
 
 Notice the first line above is prefixed with a double forward slash \`//\`. This is this C# comment syntax.
 
-# Phase II
+# Part II
 
 Add the CRUD functionality. Estimated time. 30 Minutes.
