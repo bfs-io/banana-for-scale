@@ -112,7 +112,7 @@ Open Visual Studio Code and the C# extension installed. If VSCode asks to instal
 
 ![Screengrab of VSCode asking the user to install the C# Extension](https://res.cloudinary.com/desertsofcacti/image/upload/v1615491235/Bannana%20for%20Scale/Screen_Shot_2021-03-11_at_10.59.25_AM_kfvhtk.png "VSCode missing required assets action grunt")
 
-Let's take a look at the contents of the page that we are viewing using the lightweight approach with
+Let's take a look at the contents of the page that we are viewing at `http://localhost:5000/`
 
 ![Screenshot of Blazor running in the web browser.](https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,h_340,w_640/v1615483023/Bannana%20for%20Scale/screenshot-blazor-tutorial-run_by4r9b.png "Initial Blazor Run")
 
