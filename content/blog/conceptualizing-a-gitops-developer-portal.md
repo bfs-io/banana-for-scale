@@ -33,3 +33,9 @@ description: >-
 Readings
 
 [promise.rb](https://medium.com/@gauravbasti2006/lets-keep-our-promise-in-ruby-e45925182fdc)
+
+[Files & Directories in Ruby](https://medium.com/@mindyzwanziger/files-directories-in-ruby-a-primer-b146cb17d4b9)
+
+[Text Processing in Ruby](http://media.pragprog.com/titles/rmtpruby/shell.pdf)
+
+[How do I use Ruby for Shell Scripting](https://stackoverflow.com/questions/166347/how-do-i-use-ruby-for-shell-scripting)
