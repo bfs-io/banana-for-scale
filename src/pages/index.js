@@ -36,9 +36,9 @@ class IndexPage extends React.Component {
         </Link>
         <h1>Current shirt inventory</h1>
         <img src="https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,w_800/v1626548730/mars-is-closer-than-you-think_v1vsjb.png"/>
-        <Link to={{ pathname: "https://www.bonfire.com/mars-is-closer-than-you-think/" }}
+        <a href="https://www.bonfire.com/mars-is-closer-than-you-think/"
           <Button marginTop="35px">Purchase the Mars Tee</Button>
-        </Link>
+        </a>
       </Layout>
     )
   }
