@@ -35,7 +35,7 @@ class IndexPage extends React.Component {
           <Button marginTop="35px">Read My Web Log</Button>
         </Link>
         <h1>Current shirt inventory</h1>
-        <img src="https://www.bonfire.com/mars-is-closer-than-you-think/"/>
+        <img src="https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,w_800/v1626548730/mars-is-closer-than-you-think_v1vsjb.png"/>
       </Layout>
     )
   }
