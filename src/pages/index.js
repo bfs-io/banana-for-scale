@@ -34,6 +34,8 @@ class IndexPage extends React.Component {
         <Link to="/blog/">
           <Button marginTop="35px">Read My Web Log</Button>
         </Link>
+        <h1>Current shirt inventory</h1>
+        <iframe src="https://www.bonfire.com/mars-is-closer-than-you-think/" width="800" height="1200" frameBorder="0">Browser not compatible.</iframe>
       </Layout>
     )
   }
