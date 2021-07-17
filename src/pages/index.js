@@ -36,9 +36,10 @@ class IndexPage extends React.Component {
         </Link>
         <h1>Current shirt inventory</h1>
         <img src="https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,w_800/v1626548730/mars-is-closer-than-you-think_v1vsjb.png"/>
-        <Link to="https://www.bonfire.com/mars-is-closer-than-you-think/" target="_blank">
+        
+        <div style="cursor: pointer;" onclick="window.location='https://www.bonfire.com/mars-is-closer-than-you-think/';" target="_blank">
           <Button marginTop="35px">Purchase Mars Tee-Shirt</Button>
-        </Link>
+        </div>
       </Layout>
     )
   }
