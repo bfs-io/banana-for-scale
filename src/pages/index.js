@@ -35,7 +35,7 @@ class IndexPage extends React.Component {
           <Button marginTop="35px">Read My Web Log</Button>
         </Link>
         <h1>Current shirt inventory</h1>
-        <img src="https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,w_800/v1626548730/mars-is-closer-than-you-think_v1vsjb.png"/>
+        <img src="https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,w_800/v1630207397/earthling-logo-tee_erdqeb.png"/>
         <a href="https://www.bonfire.com/earthling-logo-tee/" target="_blank">
           <Button marginTop="35px">Purchase the Earthling Logo Tee</Button>
         </a>
