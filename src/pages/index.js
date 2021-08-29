@@ -28,7 +28,7 @@ class IndexPage extends React.Component {
             🤙
           </span>
         </h1>
-        <p>Welcome to my web log titled Banana For Scale where I blog about software related subjects. A little about me; I work as Application Developer & Automation Engineer and I develop education content for learning how to code at codealongstudio.com. Thanks for stopping by!</p>
+        <p>Welcome to my web log titled Banana For Scale where I blog about software related subjects. A little about me; I work as Application Developer & Automation Engineer and I am developing education content codealongstudio dot com. Thanks for stopping by!</p>
         <br></br>
         <p>To get on my calendar, <a href="https://calendly.com/mikehacker">click here.</a></p>
         <Link to="/blog/">
