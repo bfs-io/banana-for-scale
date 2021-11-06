@@ -1,7 +1,7 @@
 ---
 path: config-terraform-enterprise-credentials-azure-devops
 date: 2021-04-20T19:51:20.610Z
-title: Configuring Terraform Enterprise Credentials to work with Azure DevOps
+title: Configuring Terraform Enterprise Credentials for Azure DevOps
 description: >-
   In this article I will share how to pass in the credentials block using Azure
   DevOps Pipeline YAML
