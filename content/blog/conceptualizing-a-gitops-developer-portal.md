@@ -1,10 +1,10 @@
 ---
-path: conceptualizing-a-gitops-developer-portal
+path: conceptualizing-a-microwebservices-developer-self-service-creation-portal
 date: 2021-03-20T16:36:45.566Z
-title: Conceptualizing a GitOps Developer Portal
+title: Conceptualizing a Microwebservice Developer Self Service Creation Portal
 description: >-
-  In this article I will discuss approaching the idea of building a GitOps
-  Developer Portal using Ruby/Shell
+  In this article I will discuss approaching the idea of building a
+  Microwebservice Developer Self Service Creation Portal using Ruby/Shell
 ---
 # Getting Started
 
