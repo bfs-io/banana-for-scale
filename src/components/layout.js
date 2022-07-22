@@ -70,7 +70,7 @@ class Layout extends React.Component {
           © {new Date().getFullYear()} - Built
           with {"\u{1F9F6}"}, in Texas by
           {` `}
-          <a href="https://www.mikehacker.dev">Mike Hacker</a>
+          <a href="https://bananaforscale.io">Banana For Scale</a>
         </Footer>
       </Wrapper>
     )
