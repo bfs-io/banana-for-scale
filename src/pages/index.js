@@ -36,7 +36,7 @@ class IndexPage extends React.Component {
         // <Link to="/blog/">
         //   <Button marginTop="35px">Read Our Web Log</Button>
         // </Link>
-        <h1>We are sponsoring a funraising effort for the Foster for CS program</h1>
+        <h1>We are sponsoring a fund-raising effort for the Foster for CS program</h1>
         <img src="https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,w_800/v1658200195/learn-cs4foster-tee_ath9ge.png"/>
         <a href="https://www.bonfire.com/learn-8/" target="_blank">
           <Button marginTop="35px">Sponser CS for Foster</Button>
