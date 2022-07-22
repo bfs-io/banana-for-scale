@@ -28,13 +28,13 @@ class IndexPage extends React.Component {
             🤙
           </span>
         </h1>
-        <p>Welcome to my web log titled Banana For Scale where I blog about software related subjects. A little about me; I work as Application Developer & Automation Engineer and I am developing education content codealongstudio dot com. Thanks for stopping by!</p>
+        <p>Welcome to Banana For Scale, an open-source blogging community discussing all things scaling such as software development, business development, personal development, community development, and individual passion projects. Thanks for stopping by!</p>
         <br></br>
-        <p>To get on my calendar, <a href="https://calendly.com/mikehacker">click here.</a></p>
-        <Link to="/blog/">
-          <Button marginTop="35px">Read My Web Log</Button>
+        // <p>Join our Slack<a href="https://join.slack.com/t/bananaforscalehq/shared_invite/zt-1cs1g4or7-v3yNIxm9DSfA8QvhpGPpXw"></a></p>
+        <Link to={{ pathname: "https://join.slack.com/t/bananaforscalehq/shared_invite/zt-1cs1g4or7-v3yNIxm9DSfA8QvhpGPpXw" }} target="_blank" />
+          <Button marginTop="35px">Join our Slack</Button>
         </Link>
-        <h1>Current shirt inventory</h1>
+        <h1>We are sponsering funraising for the Foster for CS program</h1>
         <img src="https://res.cloudinary.com/desertsofcacti/image/upload/c_scale,w_800/v1658200195/learn-cs4foster-tee_ath9ge.png"/>
         <a href="https://www.bonfire.com/learn-8/" target="_blank">
           <Button marginTop="35px">Purchase the #cs4foster Tee!</Button>
