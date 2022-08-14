@@ -1,8 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
+
 </p>
 <h1 align="center">
   Gatsby's personal blog starter
@@ -11,6 +9,11 @@
 <img alt="screesnhot" src="./screenshot.png">
 
 This starter is a fork of Gatsby Starter Blog, the most popular starter by far – with second place being Gatsby Starter Netlify CMS. So I decided to combine the 2!
+
+## Pre-release blog content accessible here
+```
+https://github.com/bfs-io/banana-for-scale/tree/07fac7d7bb01fece445c8768a1f3ced83de19d7d/content/blog
+```
 
 ## 🚀 Quick start
 
